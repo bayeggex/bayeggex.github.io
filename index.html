@@ -1,404 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title: add your Portfolio websites's title here -->
+    <title>Bay Eggex |C# Developer</title>
+
+    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="[username], [name], skill" />
+
+    <!-- Improve your SEO by adding a small descrption of you -->
+    <meta name="description" content="[Your name here] | Developer" />
+
+    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+    <link rel="icon" type="image/png" href="./photo/pp.png" />
+
+    <!-- Add your primary-theme color for the value of content -->
+    <meta name="theme-color" content="#66ff00" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <!-- Fill content with the URL of this portfolio you'll host -->
+    <meta property="og:url" content="https://devfolio.js.org/" />
+    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+    <meta property="og:title" content="[Your name here] | Developer" />
+    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
+    <meta property="og:description" content="Made using DevFolio Template" />
+    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
+      so that a thumbnail image of your portfolio is shown while shared on other platform -->
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      property="og:image"
+      content="https://devfolio.js.org/assets/devfolio.png"
     />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <!-- Again fill content attr with the URL of this portfolio you'll host -->
+    <meta property="twitter:url" content="https://devfolio.js.org" />
+    <!-- Recommended to use the same text used within <title> element -->
+    <meta property="twitter:title" content="[Your name here] | Developer" />
+    <!-- short description that shows up while your portfolio is shared -->
+    <meta
+      property="twitter:description"
+      content="Made using DevFolio Template"
+    />
+    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
+    <meta
+      property="twitter:image"
+      content="https://anilseervi.vercel.app/assets/devfolio.png"
+    />
+
+    <!-- link tags -->
+    <link rel="stylesheet" href="./css/main.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
 
-    <title>BayEggex</title>
-<!--
-Reflux Template
-https://templatemo.com/tm-531-reflux
--->
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Remove Google Analytics once you have your portfolio website set-up -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css" />
-    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
-    <link rel="stylesheet" href="assets/css/owl.css" />
-    <link rel="stylesheet" href="assets/css/lightbox.css" />
+      gtag("config", "UA-122228201-4");
+    </script>
+    <!-- End of Google Analytics -->
   </head>
-
   <body>
-    <div id="page-wraper">
-      <!-- Sidebar Menu -->
-      <div class="responsive-nav">
-        <i class="fa fa-bars" id="menu-toggle"></i>
-        <div id="menu" class="menu">
-          <i class="fa fa-times" id="menu-close"></i>
-          <div class="container">
-            <div class="image">
-              <a href="#"><img src="assets/images/author-image.jpg" alt="" /></a>
-            </div>
-            <div class="author-content">
-              <h4>BayEggex</h4>
-              <span>I'm a C# Game Developer</span>
-            </div>
-            <nav class="main-nav" role="navigation">
-              <ul class="main-menu">
-                <li><a href="#section1">About Me</a></li>
-                <li><a href="#section2">What I’m good at</a></li>
-                <li><a href="#section3">My Work</a></li>
-              </ul>
-            </nav>
-            <div class="social-network">
-              <ul class="soial-icons">
-                <li>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/EggexBay"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/channel/UCBQXlwhjwxaEdUlCY42zvMg?sub_confirmation=1"><i class="fa fa-youtube"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/bay_eggex/"><i class="fa fa-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="https://bayeggex.itch.io/"><i class="fa fa-rss"></i></a>
-                </li>
-              </ul>
-            </div>
-            <div class="copyright-text">
-              <p>Copyright 2019 Reflux Design / Copyright Games and Photos 2022 by BayEggex</p>
-            </div>
+    <!-- Hero Section -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Hi, my name is <span class="text-color-main name">Bay Eggex</span>
+          <br />
+          I'm the C# Developer.
+        </h1>
+        <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
+        </p>
+      </section>
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div
+      ></a>
+    </div>
+    <!-- /END Hero Section -->
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row about-wrapper">
+          <div class="about-wrapper__image">
+            <img
+              class="img-fluid"
+              src="./photo/pp.png"
+              alt="Profile Image"
+            />
+          </div>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              Hi, I'm bayEggex, this is how to make games, make games, making games, making money, making mobile games, making pc,
+              do Unity tutorials and have fun videos about Unity game videos.
+              My goal is to be a good game maker and my job is to become my profession. is to motivate those who have already done this work.
+            </p>
+            <p class="about-wrapper__info-text">
+              sponsorship : bayeggex.sponsorluk@gmail.com
+              Copyright Issues and recommendation : Bayeggex@gmail.com
+              Discord : https://discord.gg/f9Bf8jAAzr
+            </p>
+            <span class="about-wrapper__cta">
+              <a href="#" class="cta-btn cta-btn--resume">View Resume</a>
+            </span>
           </div>
         </div>
       </div>
+    </section>
+    <!-- /END About Section -->
 
-      <section class="section about-me" data-section="section1">
-        <div class="container">
-          <div class="section-heading">
-            <h2>About Me</h2>
-            <div class="line-dec"></div>
-            <span
-              >
-              I am making a game simply. The program I use is unity. I also have a small channel about devlogs.</span
-            >
-          </div>
-          <div class="left-image-post">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="left-image">
-                  <img src="" alt="" />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="right-text">
-                  <h4>About Me</h4>
-                  <p>
-                    I am a simple game developer who goes to high school at the age of 15, I have joined 1 jam so far.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="right-image-post">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="left-text">
-                  <h4>My Youtube Channel</h4>
-                  <p>
-                    I have a channel with a total of 3 thousand views and more than 100 subscribers.
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="right-image">
-                  <img src="" alt="" />
-                </div>
+    <!--Projects Section-->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">	
+                Platformer Ball</h3>
+              <p class="project-wrapper__text-info">
+                I simply decided to make a game in 3 days. I had fun while making the game, you will have fun playing it. It has now been downloaded by 5+ people.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.GamentCo.PlatformerBall"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >Play on google play</a
+                >
+                <a href="https://www.youtube.com/watch?v=veLrvKhdTUQ" target="_blank" class="cta-btn text-color-main"
+                  >youtube Video</a
+                >
               </div>
             </div>
-          </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./photo/hrthrthrt.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">zip zip fly</h3>
+              <p class="project-wrapper__text-info">
+                Earn points by avoiding enemies and spending them on new outfits!
+                You can show off your friends by earning points! It has over 15 downloads so far.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.GamentCo.ZipZipFly&hl=tr&gl=US"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >Play on google play</a
+                >
+                <a href="https://www.youtube.com/watch?v=dHoE7VYq75E&t=7s" target="_blank" class="cta-btn text-color-main"
+                  >youtube Video</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./photo/ehrherher.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
         </div>
-      </section>
+      </div>
+    </section>
+    <!-- End Projects Section -->
 
-      <section class="section my-services" data-section="section2">
-        <div class="container">
-          <div class="section-heading">
-            <h2>What I’m good at?</h2>
-            <div class="line-dec"></div>
-            <span
-              ></span
-            >
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="first-service-icon service-icon"></div>
-                <h4>C#</h4>
-                <p>
-                  I have been actively learning c# for about 2 years.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="second-service-icon service-icon"></div>
-                <h4>unity 2D & unity 3D</h4>
-                <p>
-                  I have been making games in unity 2d and unity 3d for about 2 years.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="third-service-icon service-icon"></div>
-                <h4>multiplayer experience</h4>
-                <p>
-                  I think I have newbie the multiplayer system, I used photon pun servers the most in my multiplayer experience.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="fourth-service-icon service-icon"></div>
-                <h4>Github</h4>
-                <p>
-                  I have projects that I have made public on github and you can check them out.
-                </p>
-              </div>
-            </div>
-          </div>
+   <!-- Contact Section -->
+   <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-wrapper">
+        <p class="contact-wrapper__text">do you want to ask a question?</p>
+        <a
+          href="bayeggex.sponsorluk@gmail.com"
+          class="cta-btn cta-btn--resume"
+          >Yes!</a
+        >
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a
+            href="https://www.youtube.com/channel/UCBQXlwhjwxaEdUlCY42zvMg"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="youtube"
+          >
+            <i class="fa fa-youtube"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/bay_eggex/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+          >
+            <i class="fa fa-instagram"></i>
+          </a>
+          </a>
+          </a>
+          <a
+            href="https://github.com/bayeggex"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <i class="fa fa-github"></i>
+          </a>
         </div>
-      </section>
-      <section class="section my-work" data-section="section3">
-        <div class="container">
-          <div class="section-heading">
-            <h2>My Work</h2>
-            <div class="line-dec"></div>
-            <span
-              >Aenean sollicitudin ex mauris, lobortis lobortis diam euismod sit
-              amet. Duis ac elit vulputate, lobortis arcu quis, vehicula
-              mauris.</span
-            >
-          </div>
-          <div class="row">
-            <div class="isotope-wrapper">
-              <form class="isotope-toolbar">
-                <label
-                  ><input
-                    type="radio"
-                    data-type="*"
-                    checked=""
-                    name="isotope-filter"
-                  />
-                  <span>all</span></label
-                >
-                <label
-                  ><input
-                    type="radio"
-                    data-type="Game Logo"
-                    name="isotope-filter"
-                  />
-                  <span>Game Logo</span></label
-                >
-                <label
-                  ><input
-                    type="radio"
-                    data-type="Game ScreenShots"
-                    name="isotope-filter"
-                  />
-                  <span>Game ScreenShots</span></label
-                >
-                <label
-                  ><input
-                    type="radio"
-                    data-type="Channel Thumbs"
-                    name="isotope-filter"
-                  />
-                  <span>Channel Thumbs</span></label
-                >
-              </form>
-              <div class="isotope-box">
-                <div class="isotope-item" data-type="Game Logo">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/gamelogo1.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/gamelogo1.png"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                      <h4>My First Game</h4>
-                      <span>Zip Zip Fly 20+Download</span>
-                    </figcaption>
-                  </figure>
-                </div>
+        <hr />
+        <p class="footer__text">
+          &copy; <span id="year"></span> - Template by anilseervi
+          <a
+            href="https://github.com/bayeggex"
+            target="_blank"
+            rel="noopener noreferrer"
+            >BayEggex</a
+          >. <br />Made with BayEggex&hearts;
+        </p>
+      </div>
+    </footer>
+    <!-- END Footer Section -->
 
-                <div class="isotope-item" data-type="Game ScreenShots">
-                  <figure class="snip1321">
-                    <img
-                      src="gamelogo2.png"
-                      alt="gamelogo2.png"
-                    />
-                    <figcaption>
-                      <a
-                        href="gamelogo2.png"
-                        data-lightbox="image-2"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                      <h4>My Second Game</h4>
-                      <span>Jumping Balls - getting ready</span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="Game ScreenShots">
-                  <figure class="snip1321">
-                    <img
-                      src="*"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="*"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                      <h4></h4>
-                      <span></span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="Game ScreenShots">
-                  <figure class="snip1321">
-                    <img
-                      src="*"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="*"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                      <h4></h4>
-                      <span></span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="Game ScreenShots">
-                  <figure class="snip1321">
-                    <img
-                      src="*"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="*"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                      <h4></h4>
-                      <span></span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="Game ScreenShots">
-                  <figure class="snip1321">
-                    <img
-                      src="*"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="*"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                      <h4></h4>
-                      <span></span>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-    <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/custom.js"></script>
     <script>
-      //according to loftblog tut
-      $(".main-menu li:first").addClass("active");
-
-      var showSection = function showSection(section, isAnimate) {
-        var direction = section.replace(/#/, ""),
-          reqSection = $(".section").filter(
-            '[data-section="' + direction + '"]'
-          ),
-          reqSectionPos = reqSection.offset().top - 0;
-
-        if (isAnimate) {
-          $("body, html").animate(
-            {
-              scrollTop: reqSectionPos
-            },
-            800
-          );
-        } else {
-          $("body, html").scrollTop(reqSectionPos);
-        }
-      };
-
-      var checkSection = function checkSection() {
-        $(".section").each(function() {
-          var $this = $(this),
-            topEdge = $this.offset().top - 80,
-            bottomEdge = topEdge + $this.height(),
-            wScroll = $(window).scrollTop();
-          if (topEdge < wScroll && bottomEdge > wScroll) {
-            var currentId = $this.data("section"),
-              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
-            reqLink
-              .closest("li")
-              .addClass("active")
-              .siblings()
-              .removeClass("active");
-          }
-        });
-      };
-
-      $(".main-menu").on("click", "a", function(e) {
-        e.preventDefault();
-        showSection($(this).attr("href"), true);
-      });
-
-      $(window).scroll(function() {
-        checkSection();
-      });
+      document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
   </body>
 </html>
