@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'AquireLight';
+    src: url('font/AquireLight.ttf') format('opentype');
+  }
+@font-face {
+  font-family: "Montserrat";
+  src: url("Font/Montserrat.ttf") format("opentype");
+}
+
+h1{
+    font-family: 'AquireLight', sans-serif;
+    animation: hueAnimation 10s infinite linear;
+}
+
+p{
+  width: 500px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    transform: scale(1);
+    background-color: #616161;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    background: linear-gradient(45deg, #4CAF50, #2196F3);
+  }
+
+.anim_Back{
+    width: 100vw;
+    height: 400px;
+    background: -moz-radial-gradient(center, ellipse cover,  #1e5799 0%, #7db9e8 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#1e5799), color-stop(100%,#7db9e8));
+    background: -webkit-radial-gradient(center, ellipse cover,  #1e5799 0%,#7db9e8 100%);
+    background: -o-radial-gradient(center, ellipse cover,  #1e5799 0%,#7db9e8 100%);
+    background: -ms-radial-gradient(center, ellipse cover,  #1e5799 0%,#7db9e8 100%);
+    background: radial-gradient(ellipse at center,  #1e5799 0%,#7db9e8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+}
+
+  
+  #header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+  }
+  
+  #buttons {
+    margin-top: 20px;
+  }
+  
+  .button {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #2ba8fb;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    text-decoration: none;
+    }
+  
+  .button:hover {
+    background-color: #6fc5ff;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+  }
+
+  button:active {
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+  }
+
+  .button2 {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: hsl(138, 96%, 58%);
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    text-decoration: none;
+    }
+  
+  .button2:hover {
+    background-color: #6fff93;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+  }
+
+  .button2:active {
+    background-color: #3dcf9e;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+  }
+
+  .button3 {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: hsl(17, 96%, 58%);
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    text-decoration: none;
+    }
+  
+  .button3:hover {
+    background-color: #ffc16f;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+  }
+
+  .button3:active {
+    background-color: #cf843d;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+  }
+  
+  .content {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.247);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    animation: fadeInContent 0.5s ease-in-out;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .card img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .card-button {
+    margin-top: 10px;
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #2ba8fb;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    text-decoration: none;
+  }
+  
+  @keyframes fadeInContent {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  :target {
+    display: block;
+  }
