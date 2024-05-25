@@ -1,89 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Bay Eggex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div id="header">
-        <h1>Bay Eggex</h1>
-    </div>
+    <header>
+        <h1>Selam, Ben Bay Eggex</h1>
+        <p>Bağımsız Oyun Geliştiricisi | Rastgele Yazılım üreten birisi | Donanım Meraklısı </p>    
+        <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-sun" id="theme-icon"></i>
+        </button>
+        
+    </header>
+    
+    <section class="cards">
+        <div class="card">
+            <h2>Hakkımda</h2>
+            <p>Merhaba ben Ege, bir diğer adıyla Bay Eggex. Bağımsız oyun geliştiricisi, Rastgele yazılım üreten biri ve
+                mikrodenetleyicilerle uğraşan birisiyim. 2022 yılından beri yazılım ve donanım üzerine çalışmaktayım. 
+                benimle iletişime geçmek isterseniz aşağıdaki sosyal medya hesaplarımdan bana ulaşabilirsiniz.
+            </p>
+            </p>
+        </div>
+        <div class="card">
+            <h2>Gözde Projelerim</h2>
+            <div class="project-list">
+                <div class="project">
+                    <a href="https://github.com/bayeggex/MazeAI" target="_blank">
+                        <img src="src/mazeai.png" alt="Proje 1 Resmi">
+                    </a>
+                    <h3>MazeAI </h3>
+                    <p>rastgele bir labirent oluşturan algoritma kullanarak çözümler bulan bir C# konsol uygulamasıdır.</p>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/bayeggex/BeyPCMonitor" target="_blank">
+                        <img src="src/prez.png" alt="Proje 1 Resmi">
+                    </a>
+                    <h3>BeyPCMonitor</h3>
+                    <p>Windows sistemindeki donanım bilgilerini almanın güçlü bir yolu</p>
+                </div>
 
-    <div id="buttons">
-        <a href="#home" class="button">ANA SAYFA</a>
-        <a href="#website" class="button">WEBSITE</a>
-        <a href="#games" class="button">GAMES</a>
-        <a href="#content" class="button">CONTENT</a>
-    </div>
+                <div class="project">
+                    <a href="https://github.com/bayeggex/Arduino-Remote-Door" target="_blank">
+                        <img src="src/asfasfasfas.png" alt="Proje 1 Resmi">
+                    </a>
+                    <h3>Arduino-Remote-Door</h3>
+                    <p>Arduino temel uzaktan kumanda kapı açma devresi ft Lcd 16x2</p>
+                </div>
 
-    <div id="home" class="content">
-      <div class="card anim_Back">
-          <h1 style="font-size: 3em;">HELLO!</h1>
-          <p>Welcome! My name is Bay Eggex. I'm a part-time content creator, part-time game developer.</p>
-          <hr>
-          <p>If you want to continue to the site, you can choose from WEBSITE, GAMES, CONTENT above and continue.</p>
-      </div>
-  </div>
-
-  <div id="website" class="content">
-    <div class="card">
-      <img src="Assets/pc.png" alt="Website Image">
-       <a href="https://bayeggex.github.io/pctopladikok.github.io/#toPc" class="button">Pc Suggestion Site</a>
-       <hr>
-       <a href="https://github.com/bayeggex/pctopladikok.github.io" class="button2">🔧Source Codes</a>
-    </div>
-
-    <div class="card">
-      <img src="Assets/steam.png" alt="Website Image">
-       <a href="SteamSalesCountDown.github.io" class="button">Steam CountDown site</a>
-       <hr>
-       <a href="https://github.com/bayeggex/pctopladikok.github.io" class="button2">🔧Source Codes</a>
-    </div>
-  </div>
-
-  <div id="games" class="content">
-    <div class="card">
-      <img src="Assets/PB.png" alt="Website Image">
-       <a href="https://play.google.com/store/apps/details?id=com.GamentCo.PlatformerBall" class="button">Platformer Balls</a>
-       <hr>
-       <a href="https://www.youtube.com/watch?v=veLrvKhdTUQ&t=59s" class="button2">📽️ Devlog</a>
-       <hr>
-       <a href="index.html#games" class="button3">💤 Close-Source</a>
-    </div>
-
-    <div class="card">
-      <img src="Assets/lixei.png" alt="Website Image">
-       <a href="https://bayeggex.itch.io/lixei" class="button">Lixei</a>
-       <hr>
-       <a href="https://husouli.bandcamp.com/album/mushroom" class="button">🎸 OST</a>
-       <hr>
-       <a href="https://www.youtube.com/watch?v=Cl-P0Eiz34A" class="button2">📽️ Devlog</a>
-       <hr>
-       <a href="index.html#games" class="button3">💤 Close-Source</a>
-    </div>
-  </div>
-  </div>
-
-  <div id="content" class="content">
-    <div class="card">
-      <img src="Assets/instagram.png" alt="Website Image">
-      <p>Uploading reels for simple and casual devlog</p>
-      <a href="https://www.instagram.com/bay_eggex/reels/" class="button">📽️Reels</a>
-    </div>
-
-    <div class="card">
-      <img src="Assets/Youtube.png" alt="Website Image">
-      <p>On this channel we make games, have fun and learn</p>
-      <a href="https://www.youtube.com/@bayeggex/videos" class="button">📽️Watch it</a>
-      <hr>
-      <p>Uploading Shorts for simple and casual devlog</p>
-      <a href="https://www.youtube.com/@bayeggex/shorts" class="button">📽️Shorts</a>
-
-    </div>
-  </div>
+                <div class="project">
+                    <a href="https://github.com/bayeggex" target="_blank">
+                        <h3>Daha fazlası github'da !</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h2>İletişim</h2>
+            <p> </p>
+            <div class="contact-buttons">
+                <a href="https://www.instagram.com/bay_eggex/" target="_blank" class="contact-btn">Instagram</a>
+                <a href="https://github.com/bayeggex" target="_blank" class="contact-btn">GitHub</a>
+                <a href="https://twitter.com/eggexbay" target="_blank" class="contact-btn">Twitter</a>
+                <a href="mailto:bayeggex@gmail.com" class="contact-btn">E-posta</a>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <footer>
+        <p>Kim takar burayı, Bayeggex &copy; 2024 💖</p>
+    </footer>
 </body>
 </html>
