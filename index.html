@@ -1,78 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="x-icon" href="Src/noloog.png">
-    <title>Bay Eggex</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bay Eggex </title>
+  <link rel="shortcut icon" type="x-icon" href="Src/noloog.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Hello, I'm bay Eggex</h1>
-        <p>Independent Game Developer | Someone who creates random software | Hardware Enthusiast </p>    
-        <button id="theme-toggle" class="theme-toggle">
+  <header>
+    <nav>
+      <div class="lang-selector">
+        <img id="lang-flag" src="https://flagcdn.com/w20/us.png" alt="Country Flag">
+        <div id="lang-options" class="lang-options">
+          <div class="lang-option" data-lang="en" data-flag="https://flagcdn.com/w20/us.png">EN</div>
+          <div class="lang-option" data-lang="tr" data-flag="https://flagcdn.com/w20/tr.png">TR</div>
+          <div class="lang-option" data-lang="zh" data-flag="https://flagcdn.com/w20/cn.png">CN</div>
+          <div class="lang-option" data-lang="fr" data-flag="https://flagcdn.com/w20/fr.png">FR</div>
+          <div class="lang-option" data-lang="es" data-flag="https://flagcdn.com/w20/es.png">ES</div>
+          <div class="lang-option" data-lang="ja" data-flag="https://flagcdn.com/w20/jp.png">JP</div>
+          <div class="lang-option" data-lang="de" data-flag="https://flagcdn.com/w20/de.png">DE</div>
+          <div class="lang-option" data-lang="ru" data-flag="https://flagcdn.com/w20/ru.png">RU</div>
+        </div>
+      </div>
+      <button id="theme-toggle" class="theme-toggle">
         <i class="fas fa-sun" id="theme-icon"></i>
-        </button>
-        
-    </header>
-    
-    <section class="cards">
-        <div class="card">
-            <h2>About Me</h2>
-            <p>Hello, I'm Ege, also known as bay Eggex. I'm an independent game developer, someone who creates random software, and
-                someone who tinkers with microcontrollers. I've been working on software and hardware since 2022. 
-                If you want to get in touch with me, you can reach me through the social media accounts below.
-            </p>
-        </div>
-        <div class="card">
-            <h2>Featured Projects</h2>
-            <div class="project-list">
-                <div class="project">
-                    <a href="https://github.com/bayeggex/MazeAI" target="_blank">
-                        <img src="Src/mazeai.png" alt="Project 1 Image">
-                    </a>
-                    <h3>MazeAI </h3>
-                    <p>A C# console application that finds solutions using an algorithm that generates a random maze.</p>
-                </div>
-                <div class="project">
-                    <a href="https://github.com/bayeggex/BeyPCMonitor" target="_blank">
-                        <img src="Src/prez.png" alt="Project 2 Image">
-                    </a>
-                    <h3>BeyPCMonitor</h3>
-                    <p>A powerful way to get hardware information on a Windows system</p>
-                </div>
+      </button>
+    </nav>
+    <div class="hero">
+      <h1 id="hero-title">
+        Hello, I'm <span class="name">bay Eggex</span> <span class="wave">👋</span>
+      </h1>
+      <p id="hero-subtitle">Student 🎓 | Embedded Systems & Hardware Geek ⚙️ | Powered by Coffee ☕️ | Gaming Enthusiast 🎮❤️</p>
+    </div>
+  </header>
 
-                <div class="project">
-                    <a href="https://github.com/bayeggex/ModernChatApp" target="_blank">
-                        <img src="Src/xd.gif" alt="Project 3 Image">
-                    </a>
-                    <h3>ModernChatApp</h3>
-                    <p>a chat app for users to engage in real-time text, image, and GIF messaging</p>
-                </div>
-
-                <div class="project">
-                    <a href="https://github.com/bayeggex" target="_blank">
-                        <h3>More on GitHub!</h3>
-                    </a>
-                </div>
-            </div>
+  <main>
+    <section class="about">
+      <h2 id="about-title">About Me</h2>
+      <div class="about-content">
+        <div class="profile-pic">
+          <img src="Src/noloog.png" alt="Bay Eggex">
         </div>
-        <div class="card">
-            <h2>Contact</h2>
-            <p> </p>
-            <div class="contact-buttons">
-                <a href="https://www.instagram.com/bay_eggex/" target="_blank" class="contact-btn">Instagram</a>
-                <a href="https://github.com/bayeggex" target="_blank" class="contact-btn">GitHub</a>
-                <a href="https://twitter.com/eggexbay" target="_blank" class="contact-btn">Twitter</a>
-                <a href="mailto:bayeggex@gmail.com" class="contact-btn">Email</a>
-            </div>
+        <div class="bio">
+          <p id="about-text-1">
+            Hi, I'm Ege, also known as bay Eggex. Since 2022, I've been producing various projects in software and hardware. I have experience in game development and microcontrollers.
+          </p>
+          <p id="about-text-2">
+            Check out my social media for more info.
+          </p>
         </div>
+      </div>
     </section>
-    <script src="script.js"></script>
-    <footer>
-        <p>Who cares about this place, bay Eggex &copy; 2024 💖</p>
-    </footer>
+
+    <section class="projects">
+      <h2 id="projects-title">Featured Projects</h2>
+      <div class="slider">
+        <div class="slider-track" id="projects-slider">
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2 id="contact-title">Contact</h2>
+      <div class="contact-buttons">
+        <a href="https://www.instagram.com/bay_eggex/" target="_blank" class="contact-btn">Instagram 😎</a>
+        <a href="https://github.com/bayeggex" target="_blank" class="contact-btn">GitHub 👨‍💻</a>
+        <a href="https://twitter.com/eggexbay" target="_blank" class="contact-btn">Twitter 🐦</a>
+        <a href="mailto:bayeggex@gmail.com" class="contact-btn">Email 📧</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Who cares about this place, bay Eggex &copy; 2025 💖</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
